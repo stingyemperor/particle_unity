@@ -42,7 +42,11 @@ namespace soil {
         // Update is called once per frame
         void Update()
         {
-
+            m_activeCount = 0;
+            for (int i = 0; i < m_particlesCount; i++)
+            {
+                m_activeCount++;
+            }
         }
     }
 }
